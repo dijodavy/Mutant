@@ -83,3 +83,215 @@ namespace AwesomeCalculator
     }
 }
 
+
+namespace CalcAppTest
+
+{
+    [TestFixture]
+    class CalcTests
+    {
+       
+        [Test]
+        public void GetAddition_Input333point5and50point5_Returns384point0()
+        {
+
+            //Arrange
+            double number1 = 333.5;
+            double number2 = 50.5;
+            double expectedResult = number1 + number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetAddition();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetAddition_Input880point9and5point1_Returns886point0()
+        {
+
+            //Arrange
+            double number1 = 880.9;
+            double number2 = 5.1;
+            double expectedResult = number1 + number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetAddition();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetAddition_Inputnegative80point5and5point5_Returnsnegative75point0()
+        {
+
+            //Arrange
+            double number1 = -80.5;
+            double number2 = 5.5;
+            double expectedResult = number1 + number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetAddition();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetSubstraction_Input10point0and5point5_Returns4point5()
+        {
+
+            //Arrange
+            double number1 = 10.0;
+            double number2 = 5.5;
+            double expectedResult = number1 - number2 ;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetSubtraction();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetSubstraction_Inputnegative25point0and10point5_Returnsnegative35point5()
+        {
+
+            //Arrange
+            double number1 = -25.0;
+            double number2 = 10.5;
+            double expectedResult = number1 - number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetSubtraction();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetSubstraction_Input225point5and100point5_Returns124point0()
+        {
+
+            //Arrange
+            double number1 = -225.5;
+            double number2 = 100.5;
+            double expectedResult = number1 - number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetSubtraction();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetMultiplication_Input25point5and100point5_Returns2562point75()
+        {
+
+            //Arrange
+            double number1 = 25.5;
+            double number2 = 100.5;
+            double expectedResult = number1 * number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetMultiplication();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetMultiplication_Inputnegative25point5and10point5_Returnsnegative267point75()
+        {
+
+            //Arrange
+            double number1 = -25.5;
+            double number2 = 10.5;
+            double expectedResult = number1 * number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetMultiplication();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetMultiplication_Inputnegative50point5andnegative50point5_Returns2550point25()
+        {
+
+            //Arrange
+            double number1 = -50.5;
+            double number2 = -50.5;
+            double expectedResult = number1 * number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetMultiplication();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetDivision_Input25point0and5point0_Returns5point0()
+        {
+
+            //Arrange
+            double number1 = 25.0;
+            double number2 = 5.0;
+            double expectedResult = number1 / number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetDivision_Inputnegative550point5and10point0_Returnsnegative55point05()
+        {
+
+            //Arrange
+            double number1 = -550.5;
+            double number2 = 10.0;
+            double expectedResult = number1 / number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetDivision_Inputnegative100point0andnegative10point0_Returnsnegative10point0()
+        {
+
+            //Arrange
+            double number1 = -100.0;
+            double number2 = -10.0;
+            double expectedResult = number1 / number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
